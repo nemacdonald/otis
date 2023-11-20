@@ -84,6 +84,12 @@ class SleeperLeague(RequestAPI):
             dict: Matchup data for the specified week.
         """
         try:
+            # Validate if the provided week is within a valid range (e.g., 1 to 17 for an NFL regular season)
+            if not (1 <= week <= 17):
+                raise ValueError(
+                    "Invalid week. Week must be 1-14 for regular season and 15-17 for playoffs."
+                )
+
             url = f"https://api.sleeper.app/v1/league/{league_id}/matchups/{week}"
             matchups = self._call(url)
             return matchups
