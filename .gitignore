@@ -1,0 +1,7 @@
+# Git Ignore
+
+# VSCode
+**/__pycache__
+
+# macOS
+*.DS_Store
