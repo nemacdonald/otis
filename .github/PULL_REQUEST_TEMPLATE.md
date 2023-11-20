@@ -1,11 +1,3 @@
----
-name: Pull Request
-about: Pull request to address an issue
-title: '[PR]: '
-labels: [""]
-assignees: ''
-
----
 <!--
 PR should reference issue that it addresses.
 Example: "refs #<issue>" or "closes #<issue>" (e.g., #closes #1234).

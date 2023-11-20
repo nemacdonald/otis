@@ -1,12 +1,3 @@
----
-name: Feature/Enhancement Request
-about: Request new features or enhancements to existing capabilities
-title: '[FEATURE REQUEST]: '
-labels: ["type:feature"]
-assignees: ''
-
----
-
 ## REASON
 <!--Why do you need this feature or what is the enhancement?-->
 
