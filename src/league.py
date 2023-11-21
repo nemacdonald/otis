@@ -1,7 +1,14 @@
 from request import RequestAPI, APIException
+from utils.logger import Logger
 import requests
 import json
 from datetime import datetime
+
+# Configure logging
+Logger.configureLog()
+
+# Get a logger for this module
+logger = Logger.getLog(__name__)
 
 
 class SleeperLeague(RequestAPI):

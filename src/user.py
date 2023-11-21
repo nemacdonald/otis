@@ -1,5 +1,5 @@
 from request import RequestAPI, APIException
-from logging import Logger
+from utils.logger import Logger
 import requests
 import json
 from datetime import datetime
