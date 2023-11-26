@@ -1,14 +1,14 @@
-from request import RequestAPI, APIException
-from utils.logger import Logger
+from sleeper.request import RequestAPI, APIException
+from utils.logger import LoggingConfig
 import requests
 import json
 from datetime import datetime
 
 # Configure logging
-Logger.configureLog()
+LoggingConfig.configureLog()
 
 # Get a logger for this module
-logger = Logger.getLog(__name__)
+logger = LoggingConfig.getLog(__name__)
 
 
 class SleeperUser(RequestAPI):

@@ -1,18 +1,22 @@
-from request import RequestAPI, APIException
-from utils.logger import Logger
+from sleeper.request import RequestAPI, APIException
+from utils.logger import LoggingConfig
 import requests
 import json
 from datetime import datetime
 
 # Configure logging
-Logger.configureLog()
+LoggingConfig.configureLog()
 
 # Get a logger for this module
-logger = Logger.getLog(__name__)
+logger = LoggingConfig.getLog(__name__)
 
 
 class SleeperLeague(RequestAPI):
-    def getLeague(self, league_id):
+    def __init__(self):
+        # Allow using _call from RequestAPI
+        super().__init__()
+
+    def getSpecificLeague(self, league_id):
         """
         Retrieve information about a Sleeper league.
 

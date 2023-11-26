@@ -1,7 +1,7 @@
 import logging
 
 
-class Logger:
+class LoggingConfig:
     """
     Configure and use logs with logging for repository use.
     """
