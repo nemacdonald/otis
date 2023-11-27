@@ -11,7 +11,7 @@ LoggingConfig.configureLog()
 logger = LoggingConfig.getLog(__name__)
 
 
-class SleeperUser(RequestAPI):
+class SleeperUserAPI(RequestAPI):
     def getUser(self, user):
         """
         Fetch user information from Sleeper API.

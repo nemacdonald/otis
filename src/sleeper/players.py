@@ -11,7 +11,7 @@ LoggingConfig.configureLog()
 logger = LoggingConfig.getLog(__name__)
 
 
-class SleeperPlayers(RequestAPI):
+class SleeperPlayersAPI(RequestAPI):
     def __init__(self, path="projects/otis/src/players"):
         super().__init__()
         self.path = path

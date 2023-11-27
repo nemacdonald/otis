@@ -11,7 +11,7 @@ LoggingConfig.configureLog()
 logger = LoggingConfig.getLog(__name__)
 
 
-class SleeperLeague(RequestAPI):
+class SleeperLeaguesAPI(RequestAPI):
     def __init__(self):
         # Allow using _call from RequestAPI
         super().__init__()

@@ -11,7 +11,7 @@ Logger.configureLog()
 logger = Logger.getLog(__name__)
 
 
-class SleeperAvatar(RequestAPI):
+class SleeperAvatarsAPI(RequestAPI):
     def getAvatarFullSize(self, avatar_id):
         try:
             url = f"https://sleepercdn.com/avatars/{avatar_id}"
