@@ -1,0 +1,19 @@
+# Create conda env 
+# Specify the dependencies and environment settings
+name: otis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytest
+  - matplotlib
+  - nb_conda_kernels
+  - notebook
+  - numpy
+  - pandas
+  - sphinx
+  - sphinx-gallery
+  - sphinx-rtd-theme 
+  - sqlalchemy
+
+  
