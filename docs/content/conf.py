@@ -30,8 +30,10 @@ extensions = [
 external_toc_exclude_missing = False
 external_toc_path = "_toc.yml"
 html_baseurl = "https://otis.readthedocs.io/en/latest/"
-html_favicon = ""
-html_logo = "assets/logos/nuclearff-512x512-transparent.png"
+html_favicon = (
+    "assets/logos/nuclearff_favicons/background_sleeper_blue/favicon-32x32.png"
+)
+html_logo = "assets/logos/nuclearff_square/nuclearff-512x512-transparent.png"
 html_sourcelink_suffix = ""
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {

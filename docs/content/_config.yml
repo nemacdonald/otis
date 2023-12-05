@@ -4,7 +4,7 @@
 title                       : OTIS
 author                      : Nolan MacDonald
 copyright                   : "2023"  # Copyright year in footer
-logo                        : assets/logos/nuclearff-512x512-transparent.png
+logo                        : assets/logos/nuclearff_square/nuclearff-512x512-transparent.png
 exclude_patterns            : [_build, .DS_Store, "**.ipynb_checkpoints", "**__pycache__"]
 only_build_toc_files        : false
 
@@ -53,7 +53,7 @@ launch_buttons:
 # HTML Settings
 # =====================================================================================
 html:
-  favicon                   : ""  # A path to a favicon image
+  favicon                   : "assets/logos/nuclearff_favicons/background_sleeper_blue/favicon-32x32.png"  # A path to a favicon image
   use_edit_page_button      : false
   use_repository_button     : true 
   use_issues_button         : true 
