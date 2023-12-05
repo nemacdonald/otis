@@ -1,0 +1,77 @@
+# =====================================================================================
+# Book Settings
+# =====================================================================================
+title                       : OTIS
+author                      : Nolan MacDonald
+copyright                   : "2023"  # Copyright year in footer
+logo                        : assets/logos/nuclearff-512x512-transparent.png
+exclude_patterns            : [_build, .DS_Store, "**.ipynb_checkpoints", "**__pycache__"]
+only_build_toc_files        : false
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+# =====================================================================================
+# Execution Settings
+# =====================================================================================
+execute:
+  execute_notebooks         : auto  # ("auto", "force", "cache", "off")
+  cache                     : ""    # Defaults to `_build/.jupyter_cache/`
+  exclude_patterns          : []    # A list of patterns to *skip* in execution
+  timeout                   : 30    # Max notebook cell run time (s)
+  run_in_temp               : false
+  allow_errors              : false # Won't build if a code cell raises an error
+  stderr_output             : show
+
+# =====================================================================================
+# LaTeX Settings
+# =====================================================================================
+latex:
+  latex_documents:
+    latex_engine              : pdflatex
+    use_jupyterbook_latex     : false
+    # targetname                : otis.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# =====================================================================================
+# Information + Launch Buttons
+# =====================================================================================
+repository:
+  url                       : https://github.com/nolmacdonald/otis
+  path_to_book              : docs/content  # Optional path to your book
+  branch                    : main
+launch_buttons:
+  notebook_interface        : classic  # ["classic", "jupyterlab"]
+  jupyterhub_url            : ""  # (e.g., https://datahub.berkeley.edu)
+  thebe                     : false # Add a thebe button to pages (requires Binder)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+# =====================================================================================
+# HTML Settings
+# =====================================================================================
+html:
+  favicon                   : ""  # A path to a favicon image
+  use_edit_page_button      : false
+  use_repository_button     : true 
+  use_issues_button         : true 
+  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
+  extra_navbar              : <a href="https://github.com/nolmacdonald">nolmacdonald</a>  # Will be displayed underneath the left navbar.
+  # extra_footer              : "Just testing a litle footer text." 
+  # google_analytics_id       : ""
+  home_page_in_navbar       : true  # Include home page in the left Navigation Bar
+  baseurl                   : "https://otis.readthedocs.io/en/latest/"
+  comments:
+    hypothesis              : false
+    utterances              : false
+
+# =====================================================================================
+# Advanced Settings
+# =====================================================================================
+sphinx:
+  extra_extensions:
+  - sphinx_rtd_theme
+  config:
+    html_theme: sphinx_rtd_theme
